@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'Popins';
+    src: url('../assets/fonts/popins/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --custom-white-blue: rgb(255, 255, 255);
+    --custom-blue: #9c0000;
+    --custom-black: #080708;
+}
+
+/* for text in body */
+* {
+    font-family: 'Popins', sans-serif;
+}
+
+/* header */
+.nav-item:hover .dropdown-menu {
+    display: block;
+    transition: all 0.5s ease-in-out;
+}
+
+
+/* for small text */
+.text-sm {
+    font-size: 12px;
+}
+
+
+/* for marquee */
+.marquee-items {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.marquee {
+    display: flex;
+    width: 200%;
+    animation: marqueeSlide 20s linear infinite;
+}
+
+@keyframes marqueeSlide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* for marquee */
+
+.autohide {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+.scrolled-down {
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.book-link {
+    color: #080708;
+    transition: 0.25s all ease-in-out;
+}
+
+.book-link:hover {
+    color: #f4fdff;
+    background-color: var(--custom-blue);
+}
+
+.teams {
+    transition: 0.25s all ease-in-out;
+}
+
+.teams:hover {
+    background-color: #c6d7ff;
+}
+
+.download-img {
+    max-height: 300px;
+}
+
+@media only screen and (min-width: 992px) {
+
+    .header-nav {
+        background-color: var(--custom-blue);
+    }
+
+    .head-link {
+        margin-right: 0.5rem;
+        color: var(--custom-white-blue);
+        border-radius: var(--bs-border-radius-xxl);
+        transition: 0.3s all ease-in-out;
+    }
+
+    .head-link:hover {
+        background-color: #f4fdffd3;
+        border-radius: var(--bs-border-radius-xxl);
+    }
+
+    .nav-item .active {
+        background-color: var(--custom-white-blue);
+        border-radius: 30px;
+    }
+
+    .head-socials-nav {
+        background-color: var(--custom-white-blue);
+        border-radius: 30px;
+        padding: 0 10px;
+    }
+
+    .head-socials {
+        transition: 0.3s all ease-in-out;
+        border-radius: 30px;
+        color: var(--custom-black);
+    }
+
+    .head-socials:hover {
+        background-color: var(--custom-blue);
+        color: var(--custom-white-blue);
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .lead {
+        font-size: smaller;
+    }
+
+    .download-img {
+        max-height: 200px;
+    }
+}
