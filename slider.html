@@ -26,7 +26,15 @@
             z-index: 1;
         }
 
+        .btn:hover{
+            color: white;
+        }
         .t-cr {
+            color: #efcfa0;
+        }
+        .swiper-button-prev,
+        .swiper-button-next{
+            
             color: #efcfa0;
         }
     </style>
@@ -194,7 +202,7 @@
                             </div>
                         </div>
                     </div>
-                   
+
 
                 </div>
                 <!-- Add Arrows -->
@@ -204,47 +212,91 @@
         </div>
     </section>
 
-<section class="bg-black py-5">
-    <div class="container">
-        <div class="playfair fs-2 my-5 text-light text-center">
-            Featured Interviews
+    <!-- articles -->
+    <section class="bg-black py-5">
+        <div class="container">
+            <div class="playfair fs-2 my-5 t-cr text-center">
+                Featured Interviews
+            </div>
+            <div class="swiper swiperarticle">
+                <div class="swiper-wrapper">
+                    <!-- @foreach($featured_magazines as $magazine) -->
+                    <div class="swiper-slide">
+                        <div class="">
+                            <div class="m-1 text-light p-4 border border-secondary">
+                                <div class="position-relative overflow-hidden mb-3" style="height:350px;">
+                                    <img src="./assets/images/admin.jpg" alt=""
+                                        class="img-fluid position-absolute top-50 start-50 translate-middle">
+                                </div>
+                                <div class="playfair fs-5 t-cr lh-sm">Manas Rai</div>
+                                <div class="pt-2 text-secondary">hello dosto kya haal chal</div>
+                                <a href=" " class="playfair btn border border-secondary mt-3 t-cr">Read article</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="">
+                            <div class="m-1 text-light p-4 border border-secondary">
+                                <div class="position-relative overflow-hidden mb-3" style="height:350px;">
+                                    <img src="./assets/images/m1.jpg" alt=""
+                                        class="img-fluid position-absolute top-50 start-50 translate-middle">
+                                </div>
+                                <div class="playfair fs-5 t-cr lh-sm">Manas Rai</div>
+                                <div class="pt-2 text-secondary">hello dosto kya haal chal</div>
+                                <a href=" " class="playfair btn border border-secondary mt-3 t-cr">Read article</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="">
+                            <div class="m-1 text-light p-4 border border-secondary">
+                                <div class="position-relative overflow-hidden mb-3" style="height:350px;">
+                                    <img src="./assets/images/m2.jpg" alt=""
+                                        class="img-fluid position-absolute top-50 start-50 translate-middle">
+                                </div>
+                                <div class="playfair fs-5 t-cr lh-sm">Manas Rai</div>
+                                <div class="pt-2 text-secondary">hello dosto kya haal chal</div>
+                                <a href=" " class="playfair btn border border-secondary mt-3 t-cr">Read article</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="">
+                            <div class="m-1 text-light p-4 border border-secondary">
+                                <div class="position-relative overflow-hidden mb-3" style="height:350px;">
+                                    <img src="./assets/images/m3.jpg" alt=""
+                                        class="img-fluid position-absolute top-50 start-50 translate-middle">
+                                </div>
+                                <div class="playfair fs-5 t-cr lh-sm">Manas Rai</div>
+                                <div class="pt-2 text-secondary">hello dosto kya haal chal</div>
+                                <a href=" " class="playfair btn border border-secondary mt-3 t-cr">Read article</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="">
+                            <div class="m-1 text-light p-4 border border-secondary">
+                                <div class="position-relative overflow-hidden mb-3" style="height:350px;">
+                                    <img src="./assets/images/m4.jpg" alt=""
+                                        class="img-fluid position-absolute top-50 start-50 translate-middle">
+                                </div>
+                                <div class="playfair fs-5 t-cr lh-sm">Manas Rai</div>
+                                <div class="pt-2 text-secondary">hello dosto kya haal chal</div>
+                                <a href=" " class="playfair btn border border-secondary mt-3 t-cr">Read article</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- @endforeach     -->
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+
         </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6 col-12 ">
-                <div class="m-1 text-light p-4 border">
-
-                    <img src="./assets/images/m1.jpg" alt="" class="img-fluid">
-                    <div class="playfair fs-5  lh-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo exercitationem consequuntur aliquam!</div>
-                    <div class="playfair pt-2 text-secondary ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo exercitationem consequuntur aliquam!</div>
-                    <a href=" " class="playfair btn border mt-3 t-cr">Read
-                        article</a>
-                    </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 ">
-                <div class="m-1 text-light p-4 border">
-
-                    <img src="./assets/images/m2.jpg" alt="" class="img-fluid">
-                    <div class="playfair fs-5  lh-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo exercitationem consequuntur aliquam!</div>
-                    <div class="playfair pt-2 text-secondary ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo exercitationem consequuntur aliquam!</div>
-                    <a href=" " class="playfair btn border mt-3 t-cr">Read
-                        article</a>
-                    </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 ">
-                <div class="m-1 text-light p-4 border">
-
-                    <img src="./assets/images/m3.jpg" alt="" class="img-fluid">
-                    <div class="playfair fs-5  lh-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo exercitationem consequuntur aliquam!</div>
-                    <div class="playfair pt-2 text-secondary ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo exercitationem consequuntur aliquam!</div>
-                    <a href=" " class="playfair btn border mt-3 t-cr">Read
-                        article</a>
-                    </div>
-            </div>
-          
-        </div>
-    </div>
-</section>
-
+    </section>
+    <!-- articles -->
 
 
 
@@ -252,7 +304,7 @@
     <script src="./bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
-
+        //  for hero section 
         var swiper = new Swiper('.swipermain', {
             slidesPerView: 1,
             centeredSlides: true,
@@ -273,6 +325,39 @@
                 delay: 3000,
             },
             speed: 1000,
+        });
+        // for article section 
+        var swiper = new Swiper('.swiperarticle', {
+            slidesPerView: 3,
+            centeredSlides: true,
+            loop: true,
+            spaceBetween: 0,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + (index + 1) + '</span>';
+                },
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3000,
+            },
+            speed: 1000,
+            breakpoints: {
+                980: {
+                    slidesPerView: 3,
+                },
+                720: {
+                    slidesPerView: 2,
+                },
+                280: {
+                    slidesPerView: 1,
+                }
+            },
         });
     </script>
 </body>
