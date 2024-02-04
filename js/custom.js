@@ -34,6 +34,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 //  for hero section 
+var swiper = new Swiper('.swiperherosection', {
+    slidesPerView: 1,
+    centeredSlides: true,
+    loop: true,
+    spaceBetween: 0,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + '</span>';
+        },
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+        delay: 3000,
+    },
+    effect: 'fade',
+    speed: 1000,
+});
+//  for hero section 
 var swiper = new Swiper('.swiperherosec', {
     slidesPerView: 1,
     centeredSlides: true,
