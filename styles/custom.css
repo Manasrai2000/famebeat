@@ -12,20 +12,13 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Popins';
-    src: url('../assets/fonts/popins/Poppins-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 :root {
     --custom-white-blue: #f4ebe6;
-    --custom-blue: #9c0000;
-    --custom-black: #080708;
+    --custom-skin: #efcfa0;
+    --custom-black: #000000;
+    --custom-green:#faffa3;
 }
 
-/* for text in body */
 * {
     font-family: 'lato';
 }
@@ -34,18 +27,10 @@
     font-family: 'playfair';
 }
 
-/* header */
-.nav-item:hover .dropdown-menu {
-    display: block;
-    transition: all 0.5s ease-in-out;
-}
-
-
 /* for small text */
 .text-sm {
     font-size: 12px;
 }
-
 
 /* for marquee */
 .marquee-items {
@@ -92,66 +77,54 @@
     transition: all 0.3s ease-in-out;
 }
 
-.book-link {
-    color: #080708;
-    transition: 0.25s all ease-in-out;
+
+.dark-gradient {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.0));
+    z-index: 1;
 }
 
-.book-link:hover {
-    color: #f4fdff;
-    background-color: var(--custom-blue);
+.btn:hover {
+    color: white;
 }
 
-.teams {
-    transition: 0.25s all ease-in-out;
+.t-cr {
+    color: #efcfa0;
 }
 
-.teams:hover {
-    background-color: #c6d7ff;
+.swiper-button-prev,
+.swiper-button-next {
+    color: #efcfa0 !important;
 }
 
-.download-img {
-    max-height: 300px;
+.border-secondary {
+    transition: all ease-in-out 0.2s;
 }
+
+.border-secondary:hover {
+    border-color: rgb(210, 210, 210) !important;
+}
+
 
 @media only screen and (min-width: 992px) {
 
-    .header-nav {
-        background-color: var(--custom-blue);
-    }
-
-    .head-link {
-        margin-right: 0.5rem;
-        color: var(--custom-white-blue);
-        border-radius: var(--bs-border-radius-xxl);
+    .nav-link {
         transition: 0.3s all ease-in-out;
-    }
-
-    .head-link:hover {
-        background-color: #f4fdffd3;
-        border-radius: var(--bs-border-radius-xxl);
-    }
-
-    .nav-item .active {
-        background-color: var(--custom-white-blue);
-        border-radius: 30px;
-    }
-
-    .head-socials-nav {
-        background-color: var(--custom-white-blue);
-        border-radius: 30px;
-        padding: 0 10px;
-    }
-
-    .head-socials {
-        transition: 0.3s all ease-in-out;
-        border-radius: 30px;
-        color: var(--custom-black);
-    }
-
-    .head-socials:hover {
-        background-color: var(--custom-blue);
+        font-family: playfair;
         color: var(--custom-white-blue);
+    }
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+        transition: 0.3s all ease-in-out;
+        font-family: playfair;
+        color: var(--custom-skin);
+    }
+
+    .nav-link:hover {
+        color: var(--custom-skin);
     }
 
 }
