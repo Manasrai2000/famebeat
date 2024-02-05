@@ -14,9 +14,9 @@
 
 :root {
     --custom-white-blue: #f4ebe6;
-    --custom-skin: #efcfa0;
+    --custom-skin: #efff77;
     --custom-black: #000000;
-    --custom-green:#faffa3;
+    --custom-green:#79b9a4;
 }
 
 * {
@@ -93,7 +93,7 @@
 }
 
 .t-cr {
-    color: #efcfa0;
+    color: var(--custom-skin);
 }
 
 .swiper-button-prev,
